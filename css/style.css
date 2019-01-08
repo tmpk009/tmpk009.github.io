@@ -1,0 +1,321 @@
+body{
+    background-color: #292826;
+}
+
+p{
+    font-family: arial;
+    color: #707070;
+    font-size: 30px;
+}
+
+h2{
+    font-family: arial;
+    color: white;
+    font-size: 60px;
+}
+
+header{
+    background-color: white;
+    margin: 0 auto;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    position: fixed;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.15), 0 6px 20px 0 rgba(255, 255, 255, 0.15);
+}
+
+header h1{
+    font-family: arial;
+    color: black;
+    padding: 0 1rem;
+    position: absolute;
+    top: 0rem; 
+    right: 0;
+}
+
+header h1 img{
+    height:50px;
+    vertical-align: middle;
+    line-height: 60px;
+}
+
+nav ul { 
+    list-style-type: none;
+    margin: 0 2% auto 0;
+    padding-left: 0;
+    text-align: left;
+    max-width: 100%;
+}
+
+nav ul li { 
+    display: inline-block; 
+    line-height: 60px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+nav ul li img{ 
+    width: 30px;
+}
+
+.main_nav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 190px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right: 0;
+    
+    overflow-x: hidden; /* Disable horizontal scroll */
+    overflow-y: hidden;
+    padding-top: 5%;
+}
+
+/* The navigation menu links */
+.main_nav a {
+    margin: 30px;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+    font-family: arial;
+    text-align: center;
+    height: 130px;
+    width:130px;
+    background-color: #292826; 
+    border-style: solid;
+    border-width: medium;
+    vertical-align: middle;
+    line-height: 130px;
+}
+
+#red{
+    border-color: #E36167;
+    color: #E36167;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+#blu{
+    border-color: #88EDFA;
+    color: #88EDFA;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+#yel{
+    border-color: #FCF979;
+    color: #FCF979;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+#gre{
+    border-color: #65D487;
+    color: #65D487;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+#whi{
+    border-color: white;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+#grey{
+    border-color: #707070;
+    color: #707070;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* When you mouse over the navigation links, change their color */
+#red:hover{
+    color: #292826;
+    background-color: #E36167;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+#blu:hover{
+    color: #292826;
+    background-color: #88EDFA;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+#yel:hover{
+    color: #292826;
+    background-color: #FCF979;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+#gre:hover{
+    color: #292826;
+    background-color: #65D487;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+#whi:hover{
+    color: #292826;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+#grey:hover{
+    color: #292826;
+    background-color: #707070;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+
+
+.main {
+    margin-right: 190px; 
+    padding: 0px 10px;
+}
+
+/*sets size for each section*/
+.main .section{
+    width: 100vw - .main_nav;
+    height: 85vh;
+}
+
+#home{
+    margin-top: 80px;
+}
+
+#link_button{
+    display:block;
+    margin: auto;
+    text-decoration: none;
+    font-family: arial;
+    color: white;
+    font-size: 45px;
+    border-style: solid;
+    border-width: medium;
+    text-align: center;
+}
+
+#link_button:hover{
+    color: #292826;
+    text-decoration-color: #292826;
+    background-color: white;
+}
+
+#about a{
+    margin-top: 50vh;
+}
+
+#news ul { 
+    list-style-type: none;
+    margin: auto;
+    text-align: center;
+}
+
+#news ul li { 
+    display: inline-block; 
+    line-height: 60px;
+    border-style: solid;
+    border-width: medium;
+    border-color:white;
+    height: 35vh;
+    width: 35vh;
+    margin: 3vw;
+    background-color:white;
+    color: #707070;
+    font-family: arial;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+#news a{
+    margin-top: 25vh;
+}
+
+iframe{
+    width:88vw;
+    height: 75vh;
+}
+
+#shop ul { 
+    list-style-type: none;
+    margin: auto;
+    text-align: center;
+}
+
+#shop ul li { 
+    display: inline-block; 
+    line-height: 60px;
+    border-style: solid;
+    border-width: medium;
+    border-color:white;
+    height: 35vh;
+    width: 30vh;
+    margin: 1vw;
+    background-color:white;
+    color: #707070;
+    font-family: arial;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+#shop ul li img{
+    width: 30vh;
+}
+
+#shop ul li p{ 
+    vertical-align: baseline;
+
+}
+
+#shop a{
+    margin-top: 30vh;
+}
+
+.main .section{
+    width: 100vw - .main_nav;
+    height: 90vh;
+}
+
+#shop ul li a {
+    text-decoration: none;
+}
+
+#itempage{
+    margin-top: 80px;
+}
+
+#itempage img{
+    width:100%;
+}
+
+#iteminfo{
+    display:inline-block;
+    width:65%;
+    float: right;
+
+    border-radius: 10px;
+}
+#item{
+    display: inline-block;
+    width:30%;
+}
+
+#basketadd{
+
+}
+
+#show{
+    margin-top:80px
+}
+
+#price{
+    font-weight: bold;
+}
+
+.mobile_menu{
+    visibility: hidden;
+    height: 0;
+    width: 0;
+}
+
+/*mobile displays*/
+@media only screen 
+and (max-width : 720px) {
+    nav{
+        visibility: hidden;
+    }
+    .mobile_menu{
+        visibility: visible;
+        
+    }
+}
