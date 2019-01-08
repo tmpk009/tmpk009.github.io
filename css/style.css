@@ -302,6 +302,51 @@ iframe{
     font-weight: bold;
 }
 
+#basket{
+    display: inline;
+    float: right;
+    text-decoration: underline;
+    font-family: arial;
+    color: white;
+    font-size: 30px;
+}
+
+#display_basket{
+    visibility: hidden;
+    display:block;
+    border-style: solid;
+    border-width: medium;
+    border-color: black;
+    z-index: 999;
+    height: 50vh;
+    width: 60vw;
+    position: fixed;
+    top:25%;
+    left:25%;
+    background-color: #292826;
+}
+
+#basket_back{
+    visibility: hidden;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+#display_basket img{
+    
+    display:block;
+    top: 0;
+    float: right;
+    width: 30px;
+    position: relative;
+}
+
 .mobile_menu{
     visibility: hidden;
     height: 0;
