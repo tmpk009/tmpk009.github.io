@@ -97,7 +97,13 @@ $(document).ready(function(){
             $('.mobile_nav').css('visibility', 'hidden');
         }
     });
-
+    
+    
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        $('nav').css('visibility', 'hidden');
+        $('.mobile_menu').css('visibility', 'visible');
+        $('.main_nav').css('visibility', 'hidden');
+    }
     
     
     console.log('ready');
