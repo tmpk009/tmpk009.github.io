@@ -87,7 +87,7 @@ $(document).ready(function(){
         
     });
     
-
+    console.log($(window).width());
     
     
     console.log('ready');
