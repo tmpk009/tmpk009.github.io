@@ -47,8 +47,6 @@ $(document).ready(function(){
                 localStorage.setItem('is_there',true);
                 count++;
             }
-            alert($(window).width());
-            alert($(window).height());
         });
     
     $('#basket').click(function(){
@@ -101,13 +99,13 @@ $(document).ready(function(){
     
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
         $('nav').css('visibility', 'hidden');
-        $('.mobile_menu').css('visibility', 'visible');
+        $('.mobile_menu').css('visibility', 'visible').animate({opacity: 1.0}, 2000);
         $('.main_nav').css('visibility', 'hidden');
     }
     
     
     console.log('ready');
-    
-    
+    console.log($(window).width());
+    console.log($(window).height());
     
 })

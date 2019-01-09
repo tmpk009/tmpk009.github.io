@@ -194,7 +194,7 @@ nav ul li img{
 }
 
 #about a{
-    margin-top: 50vh;
+    /*margin-top: 50vh;*/
 }
 
 #news ul { 
@@ -205,12 +205,12 @@ nav ul li img{
 
 #news ul li { 
     display: inline-block; 
-    line-height: 60px;
+    
     border-style: solid;
     border-width: medium;
     border-color:white;
-    height: 35vh;
-    width: 35vh;
+    height: 30vh;
+    width: 30vh;
     margin: 3vw;
     background-color:white;
     color: #707070;
@@ -235,30 +235,32 @@ iframe{
 
 #shop ul li { 
     display: inline-block; 
-    line-height: 60px;
+
     border-style: solid;
     border-width: medium;
     border-color:white;
-    height: 35vh;
-    width: 30vh;
+    height: 30vh;
+    width: 18vw;
     margin: 1vw;
     background-color:white;
     color: #707070;
     font-family: arial;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+    position: relative;
 }
 
 #shop ul li img{
-    width: 30vh;
+    width:18vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
 }
 
 #shop ul li p{ 
-    vertical-align: baseline;
-
+    bottom:0;
+    font-size: 20px;
 }
 
 #shop a{
-    margin-top: 30vh;
+    /*margin-top: 30vh;*/
 }
 
 .main .section{
@@ -282,7 +284,6 @@ iframe{
     display:inline-block;
     width:65%;
     float: right;
-
     border-radius: 10px;
 }
 #item{
@@ -364,6 +365,7 @@ iframe{
 }
 .mobile_menu{
     visibility: hidden;
+    
 }
 
 #burger img{
@@ -409,7 +411,48 @@ iframe{
 
 }
 
+#about{
+    position: relative;
+}
 
+#about #link_button{
+    position: absolute;
+    bottom:0;
+    width:100%;
+}
+
+#news{
+    position: relative;
+}
+
+#news #link_button{
+    position: absolute;
+    bottom:0;
+    width:100%;
+}
+
+#tour{
+    position:relative;
+}
+#tour #link_button{
+    position: absolute;
+    bottom:0;
+    width:100%;
+}
+
+#shop{
+    position:relative;
+}
+
+#shop #link_button{
+    position: absolute;
+    bottom:0;
+    width:100%;
+}
+
+#news_item{
+    font-size: 15px;
+}
 /*mobile displays*/
 @media only screen and (max-width:768px)
 {
@@ -422,5 +465,13 @@ iframe{
     }
     .main_nav{
         visibility: hidden;
+    }
+    
+    #news3{
+        visibility: hidden;
+    }
+    
+    #videos iframe{
+        width:100%;
     }
 }
