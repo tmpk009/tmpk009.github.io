@@ -347,6 +347,21 @@ iframe{
     position: relative;
 }
 
+#display_basket img #delete_item{
+    float: right;
+    width: 30px;
+    position: relative;
+    display:block;
+} 
+#checkout{
+    position:absolute;
+    bottom: 0;
+    width:100%;
+}
+
+#remove{
+    text-decoration: underline;
+}
 .mobile_menu{
     visibility: hidden;
     height: 0;
@@ -355,7 +370,7 @@ iframe{
 
 /*mobile displays*/
 @media only screen 
-and (max-width : 720px) {
+and (max-width : 721px) {
     nav{
         visibility: hidden;
     }
