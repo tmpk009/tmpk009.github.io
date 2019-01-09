@@ -47,7 +47,7 @@ $(document).ready(function(){
                 count++;
             }
             alert($(window).width());
-            
+            alert($(window).height());
         });
     
     $('#basket').click(function(){

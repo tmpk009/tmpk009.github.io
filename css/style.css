@@ -363,9 +363,9 @@ iframe{
     text-decoration: underline;
 }
 .mobile_menu{
-    visibility: hidden;
-    height: 0;
-    width: 0;
+    display: block;
+    float:right;
+    bottom:0;
 }
 
 /*mobile displays*/
@@ -376,6 +376,9 @@ iframe{
     }
     .mobile_menu{
         visibility: visible;
+        display: block;
+        float:right;
+        bottom:0;
         
     }
 }
