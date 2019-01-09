@@ -3,6 +3,7 @@ $(document).ready(function(){
     var headerHeight = $("header").height();
     console.log(headerHeight);
     var count = 1;
+    var click_count=0;
     
     var no_basket = localStorage.getItem('no_items');
     console.log(no_basket);
@@ -88,7 +89,15 @@ $(document).ready(function(){
         
     });
     
-    
+    $('#burger').click(function(){
+        if($('.mobile_nav').css('visibility')=='hidden'){
+            $('.mobile_nav').css('visibility', 'visible');
+        }
+        else{
+            $('.mobile_nav').css('visibility', 'hidden');
+        }
+    });
+
     
     
     console.log('ready');
