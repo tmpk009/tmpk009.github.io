@@ -68,15 +68,26 @@ $(document).ready(function(){
         
         $('#remove').click(function(){
             $('#selected').remove();
+            items= items-1;
+            localStorage.setItem('no_items', items);
+            $('#basket').html('Basket('+items+')');
+            present='false';
+            localStorage.setItem('is_there', false);
+        });
+        
+        $('#checkout').click(function(){
+            alert('Your order has been placed!');
+            $('#selected').remove();
+            items= items-1;
+            localStorage.setItem('no_items', items);
+            $('#basket').html('Basket('+items+')');
+            present='false';
+            localStorage.setItem('is_there', false);
         });
         
     });
     
-    $('#close').click(function(){
-        $("#display_basket").css("visibility", "hidden");
-        $("#basket_back").css("visibility", "hidden");
-    });
-    
+
     
     
     console.log('ready');
