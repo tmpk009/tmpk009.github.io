@@ -31,19 +31,19 @@ $(document).ready(function(){
         });
     
         $('#no_link').click(function(){
-            alert('no available dates!');
+            alert('No Currently Available Dates!');
         });
     
         $('#basketadd').click(function(){
             if (items==1){
-                alert('Only per customer!');
+                alert('Only One Per Order!');
             }
             else{
                 items+=1;
                 localStorage.setItem('no_items', items);
                 $('#basket').html('Basket('+items+')');
                 $('#display_basket').append('<div id="selected"><p class="in_item">The Now Now - CD - £10.00 <img id="remove" src="assets/close_button.png"></p></div>');
-                alert('item added to basket!');
+                alert('Item Added To BSasket!');
                 localStorage.setItem('is_there',true);
                 count++;
             }
@@ -102,6 +102,10 @@ $(document).ready(function(){
         $('.mobile_menu').css('visibility', 'visible').animate({opacity: 1.0}, 2000);
         $('.main_nav').css('visibility', 'hidden');
     }
+    
+    $('#sign_up #link_button').click(function(){
+        alert('Now on mailing list!'); 
+    });
     
     
     console.log('ready');
