@@ -46,7 +46,7 @@ $(document).ready(function(){
                 localStorage.setItem('is_there',true);
                 count++;
             }
-            
+            alert($(window).width());
             
         });
     
@@ -85,9 +85,11 @@ $(document).ready(function(){
             localStorage.setItem('is_there', false);
         });
         
+        
+        
     });
     
-    alert($(window).width());
+    
     
     
     console.log('ready');
