@@ -369,8 +369,8 @@ iframe{
 }
 
 /*mobile displays*/
-@media only screen 
-and (max-width : 721px) {
+@media only screen and (max-width:768px)
+{
     nav{
         visibility: hidden;
     }

@@ -41,7 +41,7 @@ $(document).ready(function(){
                 items+=1;
                 localStorage.setItem('no_items', items);
                 $('#basket').html('Basket('+items+')');
-                
+                $('#display_basket').append('<div id="selected"><p class="in_item">The Now Now - CD - £10.00 <img id="remove" src="assets/close_button.png"></p></div>');
                 alert('item added to basket!');
                 localStorage.setItem('is_there',true);
                 count++;
@@ -54,12 +54,11 @@ $(document).ready(function(){
         $("#display_basket").css("visibility", "visible");
         $("#basket_back").css("visibility", "visible");
         var present = localStorage.getItem('is_there');
-        if (present == 'true' && count==2){
-            $('#display_basket').append('<div id="selected"><p class="in_item">The Now Now - CD - £10.00 <img id="remove" src="assets/close_button.png"></p></div>');
-        }
+
         if (present== 'true' && count==1){
             $('#display_basket').append('<div id="selected"><p class="in_item">The Now Now - CD - £10.00 <img id="remove" src="assets/close_button.png"></p></div>');
-            count = count-1;
+            count = count+1;
+            items=localStorage.getItem('no_items');;
         }
         $('#close').click(function(){
             $("#display_basket").css("visibility", "hidden");
