@@ -98,8 +98,10 @@ $(document).ready(function(){
         $('#checkout').click(function(){
             alert('Your order has been placed!');
             $('#selected').remove();
-            items= parseInt(localStorage.getItem('no_items'));
             
+            items=0;
+            localStorage.setItem('no_items', items);
+            $('#basket').html('Basket('+items+')');
             
             present='false';
             localStorage.setItem('is_there', false);
