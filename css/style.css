@@ -479,12 +479,19 @@ input{
     margin-top: 5vh;
 }
 
+canvas { 
+    border: 1px solid #ccc;
+    margin-top: 80px;
+    background:white;
+}
+#graffiti{
+    width:90vw;
+}
+
 /*mobile displays*/
 @media only screen and (max-width:768px)
 {
-    nav{
-        visibility: hidden;
-    }
+
     .mobile_menu{
         visibility: visible;
         
@@ -499,5 +506,14 @@ input{
     
     #videos iframe{
         width:100%;
+    }
+    
+    .main .section{
+        width:90vw;
+    }
+    
+    canvas{
+        width:500px;
+        height:300px;
     }
 }

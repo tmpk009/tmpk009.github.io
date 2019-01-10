@@ -76,7 +76,8 @@ $(document).ready(function(){
         $('#checkout').click(function(){
             alert('Your order has been placed!');
             $('#selected').remove();
-            items= items-1;
+            items= parseInt(localStorage.getItem('no_items'));
+            items = items -1;
             localStorage.setItem('no_items', items);
             $('#basket').html('Basket('+items+')');
             present='false';
@@ -98,9 +99,12 @@ $(document).ready(function(){
     
     
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-        $('nav').css('visibility', 'hidden');
-        $('.mobile_menu').css('visibility', 'visible').animate({opacity: 1.0}, 2000);
         $('.main_nav').css('visibility', 'hidden');
+        $('#news3').css('visibility','hidden');
+        $('#videos iframe').css('width','100%');
+        $('.main .section').css('width','90vw');
+        $('canvas').css('width', '500');
+        $('canvas').css('height', '300');
     }
     
     $('#sign_up #link_button').click(function(){

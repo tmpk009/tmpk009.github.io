@@ -2,7 +2,7 @@
 <html>
     
 <head>
-    <title>Gorillaz - Sign Up</title>
+    <title>Gorillaz - Home</title>
     <link rel="shortcut icon" href="assets/album.jpg" type="image/x-icon" />
     <script type="text/javascript" src="js/jquery-2.2.2.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -10,7 +10,7 @@
 
 <body>
     
-    <header>
+    <header class="top">
         <h1><img src="assets/logo.png"></h1>
         <nav>
             <ul>
@@ -24,33 +24,35 @@
     </header>
     
     <div class="main_nav">
-        <a id="grey" href="index.html">Home</a>
-        <a id="blu" href="news.html">News</a>
-        <a id="whi" href="shopHome.html">Shop</a>
+        <a href="#about" id="red">About</a>
+        <a href="#news" id="blu">News</a>
+        <a href="#tour" id="yel">Tour</a>
+        <a href="#videos" id="gre">Videos</a>
+        <a href="#shop" id="whi">Shop</a>
     </div>
     
     <div class="mobile_menu">
         <div class="mobile_nav">
-            <a id="grey" href="index.html">Home</a>
-            <a id="blu" href="news.html">News</a>
-            <a id="whi" href="shopHome.html">Shop</a>
+            <a href="#about" id="red">About</a>
+            <a href="#news" id="blu">News</a>
+            <a href="#tour" id="yel">Tour</a>
+            <a href="#videos" id="gre">Videos</a>
+            <a href="#shop" id="whi">Shop</a>
         </div>
         <div id="burger">
         <img id="icon" src="assets/av089223b78f583a8e8d6.png">
         </div>
     </div>
     
-    <div class ="main">
-        <div id="sign_up">
-            <h2>Sign Up</h2>
-            <input type="text" name="email" value="" placeholder="Enter Email...">
-            <div id="link_button" href="customise_page.html">CONFIRM</div>
-        </div>
+    <div class="main">
         
+        <canvas id="c" width="1000" height="600"></canvas>
+        <img id="graffiti" src="assets/graffiti.png">
     </div>
-
+    
 </body>
     
 <script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/customiser.js"></script>
     
 </html>
