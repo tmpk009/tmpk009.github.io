@@ -1,7 +1,8 @@
+/*sets background for all pages*/
 body{
     background-color: #292826;
 }
-
+/*sets uniform tags for all pages*/
 p{
     font-family: arial;
     color: #707070;
@@ -14,14 +15,15 @@ h2{
     font-size: 60px;
 }
 
+/*top bar attributes*/
 header{
     background-color: white;
     margin: 0 auto;
     top: 0;
     width: 100%;
-    z-index: 999;
-    position: fixed;
-    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.15), 0 6px 20px 0 rgba(255, 255, 255, 0.15);
+    z-index: 999;/*sets it above all other page elements so it'll be 'on top' of the rest of page during scrolling*/
+    position: fixed;/*scrolls with page*/
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.15), 0 6px 20px 0 rgba(255, 255, 255, 0.15);/*dropped shadow for bar*/
 }
 
 header h1{
@@ -47,6 +49,7 @@ nav ul {
     max-width: 100%;
 }
 
+/*social media icons on top bar*/
 nav ul li { 
     display: inline-block; 
     line-height: 60px;
@@ -58,16 +61,17 @@ nav ul li img{
     width: 30px;
 }
 
+/*navigation for larger displays*/
 .main_nav {
-    height: 100%; /* Full-height: remove this if you want "auto" height */
-    width: 190px; /* Set the width of the sidebar */
-    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
+    height: 100%;
+    width: 190px; /*width of the sidebar */
+    position: fixed; /*fixed for scrolling*/
+    z-index: 1;
+    top: 0; 
     right: 0;
     
-    overflow-x: hidden; /* Disable horizontal scroll */
-    overflow-y: hidden;
+    overflow-x: hidden; /*Disables horizontal scrolling*/
+    overflow-y: hidden; /*Disables vertical scrolling on sidebar*/
     padding-top: 5%;
 }
 
@@ -88,6 +92,7 @@ nav ul li img{
     line-height: 130px;
 }
 
+/*Style for each different colour in the nav bar inc. when hovered over*/
 #red{
     border-color: #E36167;
     color: #E36167;
@@ -171,10 +176,12 @@ nav ul li img{
     height: 85vh;
 }
 
+/*Sets margin so that the top of section is not hidden underneath top bar*/
 #home{
     margin-top: 80px;
 }
 
+/*style for all buttons with the 'link_button' id*/
 #link_button{
     width:100%;
     display:block;
@@ -195,7 +202,7 @@ nav ul li img{
 }
 
 #about a{
-    /*margin-top: 50vh;*/
+
 }
 
 #news ul { 
@@ -204,6 +211,7 @@ nav ul li img{
     text-align: center;
 }
 
+/*Creates the news 'cards'*/
 #news ul li { 
     display: inline-block; 
     vertical-align: top;
@@ -220,7 +228,7 @@ nav ul li img{
 }
 
 #news a{
-    /*margin-top: 25vh;*/
+
 }
 
 iframe{
@@ -233,7 +241,7 @@ iframe{
     margin: auto;
     text-align: center;
 }
-
+/*Creates shop 'cards'*/
 #shop ul li { 
     display: inline-block; 
     vertical-align: top;
@@ -261,7 +269,6 @@ iframe{
 }
 
 #shop a{
-    /*margin-top: 30vh;*/
 }
 
 .main .section{
@@ -313,6 +320,7 @@ iframe{
     font-size: 30px;
 }
 
+/*When basket is opened*/
 #display_basket{
     visibility: hidden;
     display:block;
@@ -380,7 +388,7 @@ iframe{
     z-index: 9;
 }
 
-
+/*Creates navigation for mobile*/
 .mobile_nav {
     visibility: hidden;
     height: 100%; /* Full-height: remove this if you want "auto" height */
@@ -412,6 +420,7 @@ iframe{
 
 }
 
+/*CSS for keeping the link buttons at the bottom of their sections*/
 #about{
     position: relative;
 }
@@ -463,6 +472,7 @@ iframe{
     margin-top:80px;
 }
 
+/*Style for email sign up*/
 input{
     width:100%;
     height:50px;
@@ -488,14 +498,15 @@ canvas {
     width:90vw;
 }
 
-/*mobile displays*/
+/*mobile/tablet displays*/
 @media only screen and (max-width:768px)
 {
-
+    /*makes mobile/small display nav visible*/
     .mobile_menu{
         visibility: visible;
         
     }
+    /*hides main nav and items that would overflow into next section when compressed*/
     .main_nav{
         visibility: hidden;
     }
